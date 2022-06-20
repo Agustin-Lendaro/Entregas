@@ -1,11 +1,12 @@
 .header{
-    div{
+    .logoYNombre{
         display: flex;
         justify-content: center;
         align-items: center;
         max-height: 180px;
         max-width: auto;
-    img{
+        background-image: url(../img/header.jpg);
+    .logoEmpresa{
         min-width: 75px;
         min-height: 75px;
         max-width: 8vw;
@@ -14,10 +15,11 @@
         border-radius: 50%;
         transition: 0.3s;
     }
-    img:hover{
+    .logoEmpresa:hover{
         transform: scale(1.1);
     }
-    h4{
+    .headerNombre{
+        -webkit-text-stroke: 1px white; /* width and color */
         font-size: 3em;
     }
     }
@@ -70,7 +72,7 @@
     }
     
     .header_nombre{
-        font-size: 3em;
+        font-size: 2em;
     }
     
     .logoEmpresa{

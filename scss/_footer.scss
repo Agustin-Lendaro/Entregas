@@ -10,11 +10,8 @@ footer{
     div{
         a{
             text-decoration: none;
-            img{
-                max-width: 100px;
-                min-width: 75px;
-                max-height: 100px;
-                min-height: 100px;
+            .imagenRedSocial{
+                @include tamañoImagen(100px, 75px, 100px, 75px);
                 padding: 1em;
             }
         }
