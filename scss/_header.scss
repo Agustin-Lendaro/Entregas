@@ -19,8 +19,10 @@
         transform: scale(1.1);
     }
     .headerNombre{
-        -webkit-text-stroke: 1px white; /* width and color */
+        -webkit-text-stroke: 1px white; /* color y grosor */
         font-size: 3em;
+        font-weight: bold;
+        font-family: 'Titan One', cursive;
     }
     }
     nav{
@@ -51,10 +53,9 @@
 
 /*comienzo responsive*/
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 576px){
 
     .header{
-        
         display: grid;
         grid-template-rows: auto auto;
         grid-template-areas: 
@@ -91,9 +92,7 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    
-    
-    
+        
     
     .navBar li, .navBar li a{
         list-style: none;
@@ -103,28 +102,4 @@
         font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
         margin: auto;
     }
-    
-    
-    
-    
-    
-    .footer{
-        display: flex;
-        justify-content: flex-end;
-        border-top: 5px solid black;
-        margin-top: auto;
-        margin-bottom: none;
-        width: 100%;
-        background-color: #0AA1DD;
-        text-decoration: none;
-        align-self: flex-end;
-    }
-    
-    .imagenRedSocial{
-        max-height: 50px;
-        padding: 1em;    
-    }
-    footer div a {
-        text-decoration: none;
-    }
-    }
+}

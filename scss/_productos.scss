@@ -2,3 +2,7 @@
     @extend .h1;
     font-size: 40px
 }
+.parrafoProducto{
+     @extend .parrafo;
+    text-align: center;
+}

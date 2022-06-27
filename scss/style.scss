@@ -1,4 +1,4 @@
-$Body: #E8F9FD;
+$Body: rgb(242, 250, 252);
 $NavBar: #79DAE8;
 $Footer: #0AA1DD;
 @mixin tamañoImagen ($max-width, $min-width, $max-height, $min-height){
@@ -6,11 +6,6 @@ $Footer: #0AA1DD;
     min-width: $min-width;
     max-height: $max-height;
     min-height: $min-height;
-}
-.h1{
-    font-size: 60px;
-    max-width: 50vw;
-    margin: auto;
 }
 
 *{
@@ -20,10 +15,27 @@ $Footer: #0AA1DD;
 }
 
 body{
-    background-color: $Body;
-    min-height: 100vh;
+    background-color: $Body !important;
+    min-height: 100vh; /*Para hacer que el footer siempre este abajo sin importar el tamaño*/
     display: flex;
     flex-direction: column;
+}
+
+.h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 50vw;
+    margin: 30px auto 10px auto;    
+    text-align: center;
+    
+}
+
+.parrafo{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 90vw;
+    margin: 30px auto 50px auto;
+    padding-left: 20px;
 }
 
 @import "header";
@@ -32,4 +44,4 @@ body{
 @import "contacto";
 @import "galeria";
 @import "preguntas-frecuentes";
-@import "productos"
+@import "productos";
